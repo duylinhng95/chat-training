@@ -23,6 +23,9 @@
         "vue": "^2.5.17"
     },
     "dependencies": {
-        "redis": "^2.8.0"
+        "laravel-echo": "^1.5.3",
+        "laravel-echo-server": "^1.5.0",
+        "redis": "^2.8.0",
+        "socket.io-client": "^2.2.0"
     }
 }
