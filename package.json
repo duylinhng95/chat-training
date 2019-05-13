@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "bootstrap-datepicker": "^1.8.0",
         "laravel-echo": "^1.5.3",
         "laravel-echo-server": "^1.5.0",
         "redis": "^2.8.0",

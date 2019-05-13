@@ -7,14 +7,14 @@
                     <div class="card-header">Dashboard</div>
 
                     <div class="card-body">
-                        @foreach($messages as $message)
-                        <ul>
-                            <li>{{$message}}</li>
+                        <ul id="listMessage">
+                            @foreach($messages as $message)
+                            <li>{{$message->content}}</li>
+                            @endforeach
                         </ul>
-                        @endforeach
                         <form>
-                            <input type="text">
-                            <button>submit</button>
+                            <input type="text" id="messageContent">
+                            <button type="button" id="btnChat">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -24,4 +24,10 @@
 @endsection
 @push('script')
     <script src="{{mix('js/chat.js')}}"></script>
+    <script>
+	    let btn = $("#btnChat")
+	    btn.on('submit', function() {
+		    console.log('abc');
+	    })
+    </script>
 @endpush

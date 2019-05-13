@@ -19,5 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/chat/{id}', 'HomeController@messageView')->name('chat');
+Route::post('/chat/{id}', 'HomeController@sendMessage')->name('chat.message');
 
-Route::get('/chat/{id}', 'HomeController@sendMessage')->name('chat');
+Route::get('/hrm', 'HRMController@index');
+Route::get('/hrm/holiday', 'HRMController@holiday');
+Route::post('/hrm/holiday', 'HRMController@selectHoliday');

@@ -3,6 +3,7 @@
 namespace App\Entities;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Entities\Message;
 
 class User extends Authenticatable
 {
